@@ -9,4 +9,4 @@ git clone https://github.com/ayush4190/Computer_networkslab.git
 
 ```
 
-Check Wiki for more information and any updatation of code is welcomed and appreciated
+Check Wiki for more information and any updations of code is welcomed and appreciated

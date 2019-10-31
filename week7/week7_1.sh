@@ -39,12 +39,17 @@ echo open new terminal and execute week7_1.2.sh wait time 30 seconds
 sleep 30s
 
 # check the original-bandwidth
+echo ==================================================original bandwidth====================================================
 sudo ip netns exec red iperf -c 10.0.0.2
 #now changing the bandwidth
+echo ==================================================Changing bandwidth using TBF====================================================
+
 
 sudo ip netns exec red tc qdisc add dev eth0 root tbf rate 1mbit burst 100kbit latency 4ms
 
 #now check the new bandwidth
+echo ==================================================Changed bandwidth====================================================
+
 
 sudo ip netns exec red iperf -c 10.0.0.2
 

@@ -60,9 +60,13 @@ sudo  ip netns exec red tc qdisc add dev eth0 root tbf rate 256kbit burst 1600 l
 sudo apt-get install iperf
 
 echo open new terminal and execute week7_1.2.sh wait time 30 seconds
+echo =============================================Do not Exit the ongoing script====================================================
+
 sleep 30s
 
 
+
+echo ==================================================New bandwidth====================================================
 
 #now check the new bandwidth
 
